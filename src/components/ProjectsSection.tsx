@@ -86,7 +86,7 @@ export default function Projects() {
   const [activeProject, setActiveProject] = useState(projects[0]);
 
   return (
-    <div className="max-w-4xl"> 
+    <div className="max-w-5xl"> 
       <h1 className="text-2xl text-darkBlue font-bold p-5 w-full flex"> 
         PROJECTS
         <Space w="sm"/>
