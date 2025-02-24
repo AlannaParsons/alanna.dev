@@ -5,7 +5,7 @@
 
 //pre built mantine - https://ui.mantine.dev/category/app-cards/ 
 import { useState } from 'react';
-import { ActionIcon, Anchor,  Badge, Button, Card, Group, Image, Text} from '@mantine/core';
+import { ActionIcon, Anchor,  Badge, Button, Card, Group, Image, Space, Text} from '@mantine/core';
 import classes from './FeaturedCard.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
@@ -43,7 +43,7 @@ export function FeaturedCard({project}:{project: Project}) {
   }
 
   return (
-    <div className='p-10 bg-khaki_dark'>
+    <div className='md:p-10 p-5 bg-khaki_dark'>
       <Card withBorder radius="md" p="md" className={classes.card}>
         <Card.Section>
           <Carousel>
@@ -51,7 +51,6 @@ export function FeaturedCard({project}:{project: Project}) {
               return <Carousel.Slide key={imageSrc}>
                 <Image className="max-h-96 m-4 w-3/4 justify-self-center" src={imageSrc} alt={project.name}/>
               </Carousel.Slide>
-
           })}
           </Carousel>      
         </Card.Section>

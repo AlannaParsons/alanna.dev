@@ -43,7 +43,7 @@ export default function Home() {
         <Descriptors className="text-center lg:text-2xl sm:text-xl text-md"/>
       </header>
 
-      <main className="flex flex-col items-center p-10">
+      <main className="flex flex-col items-center lg:p-10 p-5">
         <ProjectsSection/>
 
         <div className="flex xl:flex-row flex-col xl:pl-40 xl:pr-40 md:pr-20 md:pl-20 max-w-7xl"> 
