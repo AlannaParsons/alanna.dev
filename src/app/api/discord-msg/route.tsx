@@ -18,14 +18,11 @@ export async function POST(req: Request){
     })
     
     if(res.ok){
-      let response = await res.json()
-      console.log("Yeai!",response)
+      return NextResponse.json({ message: 'Success' }, { status: 202 })
     }else{
-      console.log("Oops! Something is wrong.")
-      return NextResponse.json({ message: 'Post Error' }, { status: 400 })
+      return NextResponse.json({ message: 'Error Occurred' }, { status: 400 })
     }
-  } catch (error) {
-      console.log(error)
+  } catch {
+    return NextResponse.json({ message: 'Error Occurred' }, { status: 400 })
   }
-  return NextResponse.json({ status: 202 })
 }

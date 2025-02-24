@@ -29,7 +29,7 @@ export function HeaderSimple() {
           href={link.link}
           className= {`${locationClasses[location]}`}
           data-active={active === link.link || undefined}
-          onClick={(event) => {
+          onClick={() => {
             setActive(link.link);
           }}
 
@@ -42,21 +42,6 @@ export function HeaderSimple() {
       )
     })
   }
-
-  const items1 = links.map((link) => (
-    <Link
-      key={link.label}
-      href={link.link}
-      className= {`hover:bg-khaki_dark ${active === link.link ? 'bg-darkBlue' : 'bg-rose'} py-[8px] px-[12px] rounded-md text-md font-medium`}
-
-      data-active={active === link.link || undefined}
-      onClick={(event) => {
-        setActive(link.link);
-      }}
-    >
-      {link.label}
-    </Link>
-  ));
 
   return (
     <header className={`h-[56px] bg-khaki sticky top-0 z-10`} > 

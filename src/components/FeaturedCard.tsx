@@ -12,7 +12,6 @@ import { faHeart } from "@fortawesome/free-solid-svg-icons"
 import { Carousel } from '@mantine/carousel';
 
 export function FeaturedCard({project}:{project: Project}) {
-  const imgSrc = project.images ? project.images : '/icons/general/image-regular.svg'
   const [disabled, setDisabled] = useState(false);
   const [beat, setBeat] = useState(false);
   
@@ -78,7 +77,7 @@ export function FeaturedCard({project}:{project: Project}) {
             Stack
           </Text>
           <Group gap={7} mt={5}>
-            {project.technologies.map((tech: string, i: number) => {
+            {project.technologies.map((tech: string) => {
               return <div className="inline-flex" key={`${tech}`}>
                 <Badge variant="light">
                   <div className='flex items-center'> 

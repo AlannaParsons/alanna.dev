@@ -6,9 +6,9 @@ import { Carousel } from '@mantine/carousel';
 import { Image, Space, Text } from '@mantine/core';
 
 export default function Projects() {
-  let placeholder_img = '/images/under_development.png';
+  const placeholder_img = '/images/under_development.png';
 
-  let projects:Project[] = [
+  const projects:Project[] = [
     {
       name:"Bullet Journal",
       images: [placeholder_img],
