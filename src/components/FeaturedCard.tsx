@@ -10,12 +10,12 @@ import classes from './FeaturedCard.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
 import { Carousel } from '@mantine/carousel';
+import NextImage from 'next/image';
 
 export function FeaturedCard({project}:{project: Project}) {
   const [disabled, setDisabled] = useState(false);
   const [beat, setBeat] = useState(false);
   
-
   const sendLike = async () => {
     setBeat(true)
 
@@ -49,7 +49,10 @@ export function FeaturedCard({project}:{project: Project}) {
           <Carousel>
             {project.images.map((imageSrc) => {
               return <Carousel.Slide key={imageSrc}>
-                <Image className="max-h-96 m-4 w-3/4 justify-self-center" src={imageSrc} alt={project.name}/>
+                <Image 
+                  className="max-h-96 m-4 w-3/4 justify-self-center" 
+                  src={imageSrc} 
+                  alt={project.name}/>
               </Carousel.Slide>
           })}
           </Carousel>      
@@ -80,12 +83,12 @@ export function FeaturedCard({project}:{project: Project}) {
               return <div className="inline-flex" key={`${tech}`}>
                 <Badge variant="light">
                   <div className='flex items-center'> 
-                  <Image src={`/icons/tech/${tech.toLocaleLowerCase()}.png`}
-                    className="max-w-3 max-h-3 mr-1" 
-                    fallbackSrc='/images/1px.png'/>
-                    {/* <img src={`/icons/tech/${tech.toLocaleLowerCase()}.png`} 
-                    className="max-w-3 max-h-3 mr-1" 
-                    onError={event=> event.target.classList.add('hidden')}/> */}
+                    <NextImage src={`/icons/tech/${tech.toLocaleLowerCase()}.png`} 
+                    alt={`${tech}`}
+                    className="max-w-3 max-h-3 mr-1 !relative" 
+                      onError={event=> event.target.classList.add('hidden')}
+                    fill={true}
+                    />
                   <p>{tech}</p>
                   </div>
                 </Badge>
