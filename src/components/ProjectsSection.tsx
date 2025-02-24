@@ -1,4 +1,6 @@
-"use client"
+//---------------------------------------------------------
+// sizing issue: see carosel and feature card at all times
+//---------------------------------------------------------
 
 import React, { useState } from "react";
 import { FeaturedCard } from "./FeaturedCard";
@@ -26,49 +28,66 @@ export default function Projects() {
       link: 'https://github.com/AlannaParsons/bullet_journal'
     },
     {
+      name:"Tandem",
+      images: [placeholder_img],
+      tags: ["school project", "2023"],
+      description: `This is a scheduling app where in a primary user will set their schedule, 
+        the schedule will generate a unique url to be sent to a secondary user. The secondary 
+        user can rank options from available dates/times, currently this info will be sent 
+        back to the primary user where the primary user may check current results, ideally it 
+        will eventually integrate w google/apple calendar for proper scheduling`,
+      technologies: [
+        "javascript",
+        "sass",
+        "express",
+        "ejs"
+      ],
+      link: 'https://github.com/AlannaParsons/Tandem'
+    },
+    {
+      name:"Tweeter",
+      images: [placeholder_img],
+      tags: ["school project", "2023"],
+      description: `A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz`,
+      technologies: [
+        "javascript",
+        "express",
+        "sass",
+        "jquery"
+      ],
+      link: 'https://github.com/AlannaParsons/Tweeter'
+    },
+    {
+      name:"TinyApp",
+      images: ["https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls%3Aid-page.png","https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls%3Aid-page.png"],
+      tags: ["school project", "2023"],
+      description: `TinyApp is a full stack web application built with Node and 
+        Express that allows users to shorten long URLs (à la bit.ly).`,
+      technologies: [
+        "javascript",
+        "express",
+        "ejs"
+      ],
+      link: 'https://github.com/AlannaParsons/TinyApp'
+    },
+    {
+      name:"Scheduler",
+      images: [placeholder_img],
+      tags: ["school project", "2023"],
+      description: `TinyApp is a full stack web application built with Node and 
+        Express that allows users to shorten long URLs (à la bit.ly).`,
+      technologies: [
+        "react",
+        "cypress",
+        "axios"
+      ],
+      link: 'https://github.com/AlannaParsons/TinyApp'
+    },
+    {
       name:"Space Game",
       images: ["/images/space_game/Screenshot 2025-02-14 154737.png", 
         "/images/space_game/Screenshot 2025-02-14 154908.png", 
         "/images/space_game/Screenshot 2025-02-14 155119.png"],
-      tags: ["group project", "school project", "2018"],
-      description: `This is a game meant to be played on a touch table at the EPL. I was primarily in 
-        charge of sound controls as this was an important feature to the client. 
-        Bound by the limitations of school timelines, I am proud of how this project turned 
-        out and how we worked as a team and with the client.`,
-      technologies: [
-        "unity",
-        "c#"
-      ],
-      link: 'https://github.com/AlannaParsons/Space-Game'
-    },
-    {
-      name:"Tandem",
-      images: [placeholder_img],
-      tags: ["solo project", "2024"],
-      description: `This is an app`,
-      technologies: [
-        "unity",
-        "c#"
-      ],
-      link: 'https://github.com/AlannaParsons/Space-Game'
-    },
-    {
-      name:"Placeholder",
-      images: [placeholder_img],
-      tags: ["group project", "school project", "2018"],
-      description: `This is a game meant to be played on a touch table at the EPL. I was primarily in 
-        charge of sound controls as this was an important feature to the client. 
-        Bound by the limitations of school timelines, I am proud of how this project turned 
-        out and how we worked as a team and with the client.`,
-      technologies: [
-        "unity",
-        "c#"
-      ],
-      link: 'https://github.com/AlannaParsons/Space-Game'
-    },
-    {
-      name:"Test",
-      images: [placeholder_img],
       tags: ["group project", "school project", "2018"],
       description: `This is a game meant to be played on a touch table at the EPL. I was primarily in 
         charge of sound controls as this was an important feature to the client. 
@@ -106,11 +125,17 @@ export default function Projects() {
       >
         {projects.map((project:Project) => {
           return <Carousel.Slide key={project.name} className="flex">
-            <div className="flex relative size-full cursor-pointer" onClick={() => setActiveProject(project)}> 
-              <Image className="object-cover brightness-50 opacity-90" src={project.images[0]} alt={project.name} />
-
+            <div className="flex relative size-full cursor-pointer justify-center bg-rose" onClick={() => setActiveProject(project)}> 
+              <Image className="object-cover brightness-50 opacity-90 max-h-48" 
+                src={project.images[0]} 
+                alt={project.name} 
+                fallbackSrc="/icons/general/image-regular.svg"
+                />
               <header className={`bg-transparent absolute inset-0 sm:p-4 p-2 text-lg flex sm:justify-start justify-center `} > 
-                <Text className={`sm:font-normal sm:text-start font-bold text-center`}>{project.name}</Text>
+                <Text 
+                  truncate="end"
+                  className={`sm:font-normal sm:text-start font-bold text-center`}>{project.name}
+                </Text>
               </header>
                             
             </div>
