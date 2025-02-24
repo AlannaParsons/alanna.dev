@@ -5,7 +5,7 @@
 
 //pre built mantine - https://ui.mantine.dev/category/app-cards/ 
 import { useState } from 'react';
-import { ActionIcon, Anchor,  Badge, Button, Card, Group, Image, Space, Text} from '@mantine/core';
+import { ActionIcon, Anchor,  Badge, Button, Card, Group, Image, Text} from '@mantine/core';
 import classes from './FeaturedCard.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
