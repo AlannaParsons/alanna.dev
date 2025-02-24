@@ -59,7 +59,7 @@ export default function Projects() {
     },
     {
       name:"TinyApp",
-      images: ["https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls%3Aid-page.png","https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls%3Aid-page.png"],
+      images: ["https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls-page.png","https://raw.githubusercontent.com/AlannaParsons/TinyApp/refs/heads/main/docs/urls%3Aid-page.png"],
       tags: ["school project", "2023"],
       description: `TinyApp is a full stack web application built with Node and 
         Express that allows users to shorten long URLs (à la bit.ly).`,
