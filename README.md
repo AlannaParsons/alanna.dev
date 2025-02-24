@@ -34,3 +34,37 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Stack
+
+FE  
+  - React
+  - Next
+  - Hero UI
+
+BE
+  - Next
+    
+DB
+  - n/a
+
+HOSTING
+  - Vercel
+
+
+https://www.canva.com/your-apps/AAF19yeuTeE/cartoonify
+    
+## Resources
+ 
+Font - 
+  https://www.myfonts.com/collections/goodly-font-asenbayu?tab=glyphs
+  https://www.dafont.com/milky-walky.charmap
+  https://pixelsurplus.com/collections/featured-products/products/crafter
+Interactive header - https://www.vantajs.com/
+Color Palette - https://coolors.co/28536b-c2948a-7ea8be-f6f0ed-bbb193
+  - blue pink tan
+    winner https://coolors.co/28536b-c2948a-7ea8be-f6f0ed-bbb193
+    dulled https://coolors.co/visualizer/28536b-c2948a-7ea8be-f6f0ed-bbb193
+  - fun pastels 
+    https://coolors.co/f3b0aa-f6f1df-c1ece3-b4d5da-616570
+    dulled https://coolors.co/f3b0aa-f6f1df-c1ece3-b4d5da-616570

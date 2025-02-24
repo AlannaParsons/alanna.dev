@@ -1,0 +1,7 @@
+.contactIcons{
+  @apply lg:h-8 lg:w-8 w-7 h-7;
+}
+
+.contactButtons{
+  @apply rounded-full min-w-1 p-1 lg:h-16 lg:w-16 h-14 w-14;
+}
