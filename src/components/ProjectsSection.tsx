@@ -29,13 +29,15 @@ export default function Projects() {
     },
     {
       name:"Tandem",
-      images: [placeholder_img],
+      images: ["/images/tandem/Screenshot 2025-02-25 161427.png",
+            "/images/tandem/Screenshot 2025-02-25 162106.png",
+            "/images/tandem/Screenshot 2025-02-25 162140.png"],
       tags: ["school project", "2023"],
       description: `This is a scheduling app where in a primary user will set their schedule, 
-        the schedule will generate a unique url to be sent to a secondary user. The secondary 
+        the schedule will generate a unique url, to be sent to a secondary user. The secondary 
         user can rank options from available dates/times, currently this info will be sent 
         back to the primary user where the primary user may check current results, ideally it 
-        will eventually integrate w google/apple calendar for proper scheduling`,
+        will eventually integrate w google/apple calendar for proper scheduling use`,
       technologies: [
         "javascript",
         "sass",
@@ -74,8 +76,7 @@ export default function Projects() {
       name:"Scheduler",
       images: [placeholder_img],
       tags: ["school project", "2023"],
-      description: `TinyApp is a full stack web application built with Node and 
-        Express that allows users to shorten long URLs (à la bit.ly).`,
+      description: ``,
       technologies: [
         "react",
         "cypress",
@@ -114,17 +115,12 @@ export default function Projects() {
       <Carousel
         slideSize={{ base: "70%", sm: "33.333333%"}}
         slidesToScroll={{ base: 1, sm: 3}}
-        // align={{ base: "center", sm: "start"}}
-        //slidesToScroll={1|3}
         className="h-200"
         withIndicators
-        // slideSize="33.333333%"
         slideGap="md"
         loop
-        // align="start"
         controlsOffset="lg"
         controlSize={14}
-        // slidesToScroll={3}
         p="md"
       >
         {projects.map((project:Project) => {
