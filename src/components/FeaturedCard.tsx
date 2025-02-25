@@ -1,5 +1,4 @@
 //---------------------------------------------------------
-// make fallback img of transparent pixel for stack badges? hydration issues, doesnt always hide broken src onError -.-
 //revisit error/success toast for like
 //---------------------------------------------------------
 
@@ -54,7 +53,7 @@ export function FeaturedCard({project}:{project: Project}) {
             {project.images.map((imageSrc) => {
               return <Carousel.Slide key={imageSrc}>
                 <Image 
-                  className="max-h-96 m-4 w-3/4 justify-self-center" 
+                  className="max-h-96 m-4 w-3/4 justify-self-center pr-3 pl-3" 
                   src={imageSrc} 
                   alt={project.name}/>
               </Carousel.Slide>
