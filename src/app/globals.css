@@ -19,3 +19,17 @@ body {
   color: var(--foreground);
   background: var(--background);
 }
+
+
+.mantine-Carousel-indicator {
+  background-color:  var(--mantine-color-darkBlue-9) !important;
+}
+
+.mantine-Carousel-indicators {
+  bottom: 0px !important;
+}
+
+.feature-card .mantine-Carousel-control {
+  background-color:  var(--mantine-color-lightBlue-2) !important;
+}
+

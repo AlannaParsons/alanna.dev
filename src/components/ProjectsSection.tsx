@@ -112,15 +112,19 @@ export default function Projects() {
         <span className="flex-grow self-center bg-darkBlue h-[1px]"></span>          
       </h1> 
       <Carousel
+        slideSize={{ base: "70%", sm: "33.333333%"}}
+        slidesToScroll={{ base: 1, sm: 3}}
+        // align={{ base: "center", sm: "start"}}
+        //slidesToScroll={1|3}
         className="h-200"
         withIndicators
-        slideSize="33.333333%"
+        // slideSize="33.333333%"
         slideGap="md"
         loop
-        align="start"
+        // align="start"
         controlsOffset="lg"
         controlSize={14}
-        slidesToScroll={3}
+        // slidesToScroll={3}
         p="md"
       >
         {projects.map((project:Project) => {

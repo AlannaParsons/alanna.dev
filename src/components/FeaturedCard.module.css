@@ -1,5 +1,4 @@
 .card {
-  /* background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-7)); */
   @apply bg-eggshell;
 }
 
@@ -16,4 +15,3 @@
   font-size: var(--mantine-font-size-xs);
   font-weight: 700;
 }
-

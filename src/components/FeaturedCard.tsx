@@ -43,10 +43,14 @@ export function FeaturedCard({project}:{project: Project}) {
   }
 
   return (
-    <div className='md:p-10 p-5 bg-khaki_dark'>
+    <div className='feature-card md:p-10 p-2 bg-khaki_dark'>
       <Card withBorder radius="md" p="md" className={classes.card}>
         <Card.Section>
-          <Carousel>
+          <Carousel
+          align="start"
+          withIndicators
+          initialSlide={1}
+          >
             {project.images.map((imageSrc) => {
               return <Carousel.Slide key={imageSrc}>
                 <Image 
