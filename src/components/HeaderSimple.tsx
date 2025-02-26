@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse, faFile } from "@fortawesome/free-solid-svg-icons"
 
 const links = [
-  { link: '/home', label: 'Home', icon: faHouse },
+  { link: '/', label: 'Home', icon: faHouse },
   { link: '/resume', label: 'Resume', icon: faFile},
 ];
 
