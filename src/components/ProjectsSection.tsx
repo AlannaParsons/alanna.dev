@@ -48,7 +48,7 @@ export default function Projects() {
     },
     {
       name:"Tweeter",
-      images: [placeholder_img],
+      images: ["/images/tweeter/Screenshot 2025-02-25 165127.png"],
       tags: ["school project", "2023"],
       description: `A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz`,
       technologies: [
@@ -74,7 +74,7 @@ export default function Projects() {
     },
     {
       name:"Scheduler",
-      images: [placeholder_img],
+      images: ["/images/scheduler/Screenshot 2025-02-25 172651.png"],
       tags: ["school project", "2023"],
       description: ``,
       technologies: [
