@@ -1,5 +1,3 @@
-"use client"
-import { useState } from 'react';
 import {Image, Space, Tooltip} from '@mantine/core';
 import classes from './SkillsSection.module.css';
 
@@ -9,7 +7,7 @@ export default function SkillsSection() {
     'Css3', 'Github', 'Jest', 'Mocha', 'NextJS', 'PostgreSQL', 'Tailwind',
     'Vercel', 'Vim', 'VScode'
   ];
-  
+
 return(
   <div className="flex flex-1 flex-col mt-10"> 
 
