@@ -17,7 +17,7 @@ export default function Projects() {
       tags: ["solo project", "current"],
       description: `This is meant to act like a digital bullet journal. The user can pull in template 
         pages and customize them to their specific useage. Currently, rating, notes and goals pages 
-        have been implimented, though the structure is loose so that the user may tailor them to their needs.`,
+        have been implemented, the structure is loose so that the user may tailor each page to their needs.`,
       technologies: [
         "react",
         "nextJS",
@@ -34,10 +34,10 @@ export default function Projects() {
             "/images/tandem/Screenshot 2025-02-25 162140.png"],
       tags: ["school project", "2023"],
       description: `This is a scheduling app where in a primary user will set their schedule, 
-        the schedule will generate a unique url, to be sent to a secondary user. The secondary 
-        user can rank options from available dates/times, currently this info will be sent 
-        back to the primary user where the primary user may check current results, ideally it 
-        will eventually integrate w google/apple calendar for proper scheduling use`,
+        which will generate a unique url to be sent to a secondary user. The secondary 
+        user can select options from given available dates/times. Currently this info will be sent 
+        back to the primary user as ranked results. Eventually I'd like to integrate this with
+        google/apple calendar for proper scheduling use`,
       technologies: [
         "javascript",
         "sass",
@@ -50,7 +50,8 @@ export default function Projects() {
       name:"Tweeter",
       images: ["/images/tweeter/Screenshot 2025-02-25 165127.png"],
       tags: ["school project", "2023"],
-      description: `A twitter clone by Lighthouse Labs for web bootcamp students to learn front-end dev skillz`,
+      description: `A twitter clone by Lighthouse Labs for web bootcamp students to learn 
+        front-end development skills`,
       technologies: [
         "javascript",
         "express",
