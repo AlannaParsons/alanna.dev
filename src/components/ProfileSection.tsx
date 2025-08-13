@@ -11,13 +11,18 @@ export default function SkillsSection() {
       <div className="flex justify-center sm:flex-row flex-col sm:items-start items-center"> 
 
         <Text className='p-5 sm:w-1/2 xl:text-right text-center xl:text-base font-extralight text-lg font-stretch-50% text-black'>
-          Outside of computer work, I like to
+        
+          Currently working towards AWS Certified Cloud Practitioner certification 
+          and finding my space in the tech world
+          
+          
+          {/* Outside of computer work, I like to
           spend time outdoors in summer,
           enjoying gardening and hiking. In winter,
           I tend to hunker down with boardgames.
           I keep busy in my free time with
           personal projects and continual home
-          renovations.
+          renovations. */}
         </Text>
 
         <Image

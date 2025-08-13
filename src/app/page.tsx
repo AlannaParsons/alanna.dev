@@ -12,7 +12,6 @@ import SkillsSection from "@/components/SkillsSection";
 import Contacts from "@/components/Contacts";
 import ProfileSection from "@/components/ProfileSection";
 
-
 export default function Home() {
 
   useEffect(() => {
@@ -49,7 +48,7 @@ export default function Home() {
       <main className="flex flex-col items-center p-10">
         <ProjectsSection/>
 
-        <div className="flex xl:flex-row flex-col xl:pl-40 xl:pr-40 md:pr-20 md:pl-20"> 
+        <div className="flex xl:flex-row flex-col xl:pl-40 xl:pr-40 md:pr-20 md:pl-20 max-w-7xl"> 
           <SkillsSection/>
           <ProfileSection/>
         </div>

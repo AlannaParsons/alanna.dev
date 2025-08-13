@@ -47,7 +47,7 @@ export function FeaturedCard({project}:{project: Project}) {
           <Carousel
           align="start"
           withIndicators
-          initialSlide={1}
+          initialSlide={0}
           >
             {project.images.map((imageSrc) => {
               return <Carousel.Slide key={imageSrc}>
