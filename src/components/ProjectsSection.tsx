@@ -12,12 +12,16 @@ export default function Projects() {
   const placeholder_img = '/images/under_development.png';
 
   const projects:Project[] = [
-    {
+    { 
       name:"Bullet Journal",
-      images: [placeholder_img],
+      images: ["/images/bullet_journal/Screenshot 2025-07-30 165530.png",
+        "/images/bullet_journal/Screenshot 2025-07-30 165550.png",         
+        "/images/bullet_journal/Screenshot 2024-10-23 141321.png",
+        "/images/bullet_journal/Screenshot 2024-10-23 141423.png",
+        "/images/bullet_journal/Screenshot 2024-10-23 141512.png"],
       tags: ["solo project", "current"],
       description: `This is meant to act like a digital bullet journal. The user can pull in template 
-        pages and customize them to their specific useage. Currently, rating, notes and goals pages 
+        pages and customize them to their specific useage. Currently, rating, notes, goals and bookshelf pages 
         have been implemented, the structure is loose so that the user may tailor each page to their needs.`,
       technologies: [
         "react",

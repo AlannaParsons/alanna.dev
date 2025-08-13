@@ -1,10 +1,11 @@
 //---------------------------------------------------------
 //revisit error/success toast for like
+//onError event for image not found, better way to handle?
 //---------------------------------------------------------
 
 //pre built mantine - https://ui.mantine.dev/category/app-cards/ 
 import { useState } from 'react';
-import { ActionIcon, Anchor,  Badge, Button, Card, Group, Image, Text} from '@mantine/core';
+import { ActionIcon, Anchor, Badge, Button, Card, Group, Image, Text, Tooltip} from '@mantine/core';
 import classes from './FeaturedCard.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHeart } from "@fortawesome/free-solid-svg-icons"
@@ -14,11 +15,9 @@ import NextImage from 'next/image';
 export function FeaturedCard({project}:{project: Project}) {
   const [disabled, setDisabled] = useState(false);
   const [beat, setBeat] = useState(false);
-  
+
   const sendLike = async () => {
     setBeat(true)
-
-    //toast for error/success???
     try {
       const res = await fetch(`/api/discord-msg`,{
         method: 'POST',
@@ -53,7 +52,7 @@ export function FeaturedCard({project}:{project: Project}) {
             {project.images.map((imageSrc) => {
               return <Carousel.Slide key={imageSrc}>
                 <Image 
-                  className="max-h-96 m-4 w-3/4 justify-self-center pr-3 pl-3" 
+                  className=" m-4 max-h-96 object-scale-down justify-self-center pr-3 pl-3" 
                   src={imageSrc} 
                   alt={project.name}/>
               </Carousel.Slide>
@@ -89,7 +88,7 @@ export function FeaturedCard({project}:{project: Project}) {
                     <NextImage src={`/icons/tech/${tech.toLocaleLowerCase()}.png`} 
                     alt={`${tech}`}
                     className="max-w-3 max-h-3 mr-1 !relative" 
-                      onError={event=> event.target.classList.add('hidden')}
+                    onError={event=> event.target.classList.add('hidden')}
                     fill={true}
                     />
                   <p>{tech}</p>
@@ -106,10 +105,12 @@ export function FeaturedCard({project}:{project: Project}) {
               Show Details 
             </Button>
           </Anchor>
-          
-          <ActionIcon variant="default" radius="md" size={36} disabled={disabled} className={`${disabled ?  "bg-red-500" : " text-[#ffffff] bg-red-500 "}}`} onClick={() => sendLike()}>
-            <FontAwesomeIcon icon={faHeart} beatFade={beat} className={` w-4 h-4`} />
-          </ActionIcon>
+
+          <Tooltip offset={5} withArrow label={disabled ? "Thanks for your input" : "Like this project"}>
+            <ActionIcon variant="default" radius="md" size={36} disabled={disabled} className={`${disabled ?  "bg-red-500" : " text-[#ffffff] bg-red-500 "}}`} onClick={() => sendLike()}>
+              <FontAwesomeIcon icon={faHeart} beatFade={beat} className={` w-4 h-4`} />
+            </ActionIcon>
+          </Tooltip>
         </Group>
       </Card>
     </div>
