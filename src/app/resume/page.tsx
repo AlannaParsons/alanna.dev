@@ -16,8 +16,11 @@ export default function Resume() {
         </header>
 
         <iframe loading="lazy" className="h-full"
-          src="https://www.canva.com/design/DAGev_jE56A/fd8YlA-3I39kO3mXsvXdxA/view?embed" allowFullScreen allow="fullscreen">
+          src="https://www.canva.com/design/DAGv-b7mAfc/23X5BE-JibbNzDxzznnZHQ/view?utm_content=DAGv-b7mAfc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hae44d42cb0" allowFullScreen allow="fullscreen">
         </iframe>
+        {/* https://www.canva.com/design/DAGv-b7mAfc/23X5BE-JibbNzDxzznnZHQ/view?utm_content=DAGv-b7mAfc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hae44d42cb0
+                   src="https://www.canva.com/design/DAGev_jE56A/fd8YlA-3I39kO3mXsvXdxA/view?embed" allowFullScreen allow="fullscreen">
+*/}
     </div>
   )
 }
