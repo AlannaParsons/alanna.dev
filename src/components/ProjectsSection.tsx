@@ -9,7 +9,7 @@ import { Image, Space, Text } from '@mantine/core';
 import { useViewportSize } from '@mantine/hooks';
 
 export default function Projects() {
-  const placeholder_img = '/images/under_development.png';
+  // const placeholder_img = '/images/under_development.png';
 
   const projects:Project[] = [
     { 
