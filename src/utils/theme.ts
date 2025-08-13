@@ -1,4 +1,4 @@
-import { createTheme, MantineColorsTuple } from '@mantine/core';
+import { createTheme } from '@mantine/core';
 import localFont from 'next/font/local';
 import { myDarkBlue, myEggshell, myKhaki, myLightBlue, myRose} from './colors'
 
