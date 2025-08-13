@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import { FeaturedCard } from "./FeaturedCard";
 import { Carousel } from '@mantine/carousel';
 import { Image, Space, Text } from '@mantine/core';
+import { useViewportSize } from '@mantine/hooks';
 
 export default function Projects() {
   const placeholder_img = '/images/under_development.png';
@@ -106,7 +107,13 @@ export default function Projects() {
 
   ]
 
+  const { height, width } = useViewportSize();
   const [activeProject, setActiveProject] = useState(projects[0]);
+  const scrollControl = (index: number) => {
+    if (width < 768) {
+      setActiveProject(projects[index])
+    }
+  }
 
   return (
     <div className="max-w-4xl"> 
@@ -123,8 +130,8 @@ export default function Projects() {
         slideGap="md"
         loop
         controlsOffset="lg"
-        controlSize={14}
         p="md"
+        onSlideChange={(index) => scrollControl(index)}
       >
         {projects.map((project:Project) => {
           return <Carousel.Slide key={project.name} className="flex">
@@ -134,10 +141,11 @@ export default function Projects() {
                 alt={project.name} 
                 fallbackSrc="/icons/general/image-regular.svg"
                 />
-              <header className={`bg-transparent absolute inset-0 sm:p-4 p-2 text-lg flex justify-center `} > 
+              <header className={`bg-transparent absolute inset-0 md:p-4 p-2 text-lg flex md:justify-start justify-center `} > 
                 <Text 
                   truncate="end"
-                  className={`sm:font-normal sm:text-start font-bold text-center`}>{project.name}
+                  className={`md:font-normal md:text-start font-bold text-center`}>
+                    {project.name}
                 </Text>
               </header>
                             

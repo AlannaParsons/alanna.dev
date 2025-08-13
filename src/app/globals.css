@@ -20,6 +20,7 @@ body {
   background: var(--background);
 }
 
+/* seperate? not enough */
 
 .mantine-Carousel-indicator {
   background-color:  var(--mantine-color-darkBlue-9) !important;
@@ -29,7 +30,8 @@ body {
   bottom: 0px !important;
 }
 
-.feature-card .mantine-Carousel-control {
+.mantine-Carousel-control {
   background-color:  var(--mantine-color-lightBlue-2) !important;
+  color: black !important;
 }
 
