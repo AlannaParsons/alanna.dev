@@ -111,7 +111,7 @@ export default function Projects() {
 
   ]
 
-  const { height, width } = useViewportSize();
+  const { width } = useViewportSize();
   const [activeProject, setActiveProject] = useState(projects[0]);
   const scrollControl = (index: number) => {
     if (width < 768) {
