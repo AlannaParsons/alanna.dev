@@ -77,7 +77,9 @@ export default function Projects() {
       name:"Scheduler",
       images: ["/images/scheduler/Screenshot 2025-02-25 172651.png"],
       tags: ["school project", "2023"],
-      description: ``,
+      description: `This Scheduler has been designed to allow appointments to be booked Mon-Fri 
+        between the hours of 12 pm -5pm. It is limmited to only allow one interview to be booked 
+        for time slot.`,
       technologies: [
         "react",
         "cypress",
@@ -126,13 +128,13 @@ export default function Projects() {
       >
         {projects.map((project:Project) => {
           return <Carousel.Slide key={project.name} className="flex">
-            <div className="flex relative size-full cursor-pointer justify-center bg-rose" onClick={() => setActiveProject(project)}> 
+            <div className="flex relative size-full cursor-pointer justify-center bg-khaki" onClick={() => setActiveProject(project)}> 
               <Image className="object-cover brightness-50 opacity-90 max-h-48" 
                 src={project.images[0]} 
                 alt={project.name} 
                 fallbackSrc="/icons/general/image-regular.svg"
                 />
-              <header className={`bg-transparent absolute inset-0 sm:p-4 p-2 text-lg flex sm:justify-start justify-center `} > 
+              <header className={`bg-transparent absolute inset-0 sm:p-4 p-2 text-lg flex justify-center `} > 
                 <Text 
                   truncate="end"
                   className={`sm:font-normal sm:text-start font-bold text-center`}>{project.name}
