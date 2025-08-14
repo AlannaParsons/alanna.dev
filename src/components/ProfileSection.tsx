@@ -12,10 +12,10 @@ export default function SkillsSection() {
 
         <Text className='p-5 sm:w-1/2 xl:text-right text-center xl:text-base font-extralight text-lg font-stretch-50% text-black'>
         
-          Currently working towards AWS Certified Cloud Practitioner certification 
+          Currently working towards AWS Cloud Practitioner certification 
           and finding my space in the tech world
           
-          
+        
           {/* Outside of computer work, I like to
           spend time outdoors in summer,
           enjoying gardening and hiking. In winter,
