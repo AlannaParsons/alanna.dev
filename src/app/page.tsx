@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <div>
-      <header id="header" className="p-10 bg-khaki">
+      <header id="header" className="p-8 bg-khaki">
         <Space h="lg" />
         <Title c="darkBlue.9" ta="center" className="lg:text-12xl sm:text-9xl text-8xl">alanna parsons</Title>
         <Space h="xl" />
@@ -46,12 +46,9 @@ export default function Home() {
       </header>
 
       <main className="flex flex-col items-center p-10">
+        <ProfileSection/>
         <ProjectsSection/>
-
-        <div className="flex xl:flex-row flex-col xl:pl-40 xl:pr-40 md:pr-20 md:pl-20 max-w-7xl"> 
-          <SkillsSection/>
-          <ProfileSection/>
-        </div>
+        <SkillsSection/>
       </main>
 
       <footer className="flex-grow self-center bg-white h-[1px] text-center">
