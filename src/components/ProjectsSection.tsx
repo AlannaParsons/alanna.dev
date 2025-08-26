@@ -16,9 +16,9 @@ export default function Projects() {
       name:"Bullet Journal",
       images: ["/images/bullet_journal/Screenshot 2025-07-30 165530.png",
         "/images/bullet_journal/Screenshot 2025-07-30 165550.png",         
-        "/images/bullet_journal/Screenshot 2024-10-23 141321.png",
+        "/images/bullet_journal/Screenshot 2024-10-23 1413212.png",
         "/images/bullet_journal/Screenshot 2024-10-23 141423.png",
-        "/images/bullet_journal/Screenshot 2024-10-23 141512.png"],
+        "/images/bullet_journal/Screenshot 2024-10-23 1415122.png"],
       tags: ["solo project", "current"],
       description: `This is meant to act like a digital bullet journal. The user can pull in template 
         pages and customize them to their specific useage. Currently, rating, notes, goals and bookshelf pages 
