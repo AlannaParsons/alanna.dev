@@ -9,19 +9,27 @@ export default function Contacts() {
     <div className="flex">
       <span className="flex-grow self-center bg-white h-[2px]"></span>
       <Button className={classes.contactButtons}> 
-        <a href="mailto:alannagparsons@gmail.com" target="_blank" title="mailto:alannagparsons@gmail.com"><FontAwesomeIcon icon={faEnvelopeOpen} className={classes.contactIcons}/></a>
+        <a href="mailto:alannagparsons@gmail.com" target="_blank" title="mailto:alannagparsons@gmail.com">
+          <FontAwesomeIcon icon={faEnvelopeOpen} className={classes.contactIcons}/>
+        </a>
       </Button>
 
       <Button className={classes.contactButtons}> 
-        <FontAwesomeIcon icon={faGithub} className={classes.contactIcons}/>
+        <a href="https://github.com/AlannaParsons" target="_blank" title="github link">
+          <FontAwesomeIcon icon={faGithub} className={classes.contactIcons}/>
+        </a>
       </Button>
 
       <Button className={classes.contactButtons}> 
-        <FontAwesomeIcon icon={faLinkedin} className={classes.contactIcons}/>
+        <a href="https://www.linkedin.com/in/alanna-parsons/" target="_blank" title="linked-in link">
+          <FontAwesomeIcon icon={faLinkedin} className={classes.contactIcons}/>
+        </a>
       </Button>
 
       <Button className={classes.contactButtons}> 
-        <FontAwesomeIcon icon={faBluesky} className={classes.contactIcons}/>
+        <a href="https://bsky.app/profile/lanni-p.bsky.social" target="_blank" title="bluesky link">
+          <FontAwesomeIcon icon={faBluesky} className={classes.contactIcons}/>
+        </a>
       </Button>
       <span className="flex-grow self-center bg-white h-[1px]"></span>
     </div>
