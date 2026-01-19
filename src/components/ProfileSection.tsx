@@ -21,8 +21,7 @@ export default function ProfileSection() {
           </div>
 
           <Text className='m-2 text-black text-center font-bold p-2'>        
-            Currently working towards AWS Cloud Practitioner certification 
-            and finding my space in the tech world
+            Currently working towards a software developer diploma finding my space in the tech world
           
             {/* Outside of computer work, I like to
             spend time outdoors in summer,
